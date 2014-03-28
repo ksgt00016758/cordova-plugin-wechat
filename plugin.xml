@@ -3,7 +3,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="xu.li.cordova.wechat"
+    id="org.apache.cordova.wechat"
     version="0.4">
     <name>Wechat</name>
     <description>A cordova plugin, a JS version of Wechat SDK</description>
@@ -36,10 +36,10 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Wechat">
-                <param name="android-package" value="xu.li.cordova.wechat.Wechat"/>
+                <param name="android-package" value="org.apache.cordova.wechat.Weixin"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/Wechat.java" target-dir="src/xu/li/cordova/wechat" />
+        <source-file src="src/android/Weixin.java" target-dir="src/org/apache/cordova/wechat" />
     </platform>
 </plugin>
