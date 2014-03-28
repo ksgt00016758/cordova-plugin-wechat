@@ -167,7 +167,6 @@
     WXMediaMessage *wxMediaMessage = [WXMediaMessage message];
     wxMediaMessage.title = [message objectForKey:@"title"];
     wxMediaMessage.description = [message objectForKey:@"description"];
-    wxMediaMessage.mediaTagName = [message objectForKey:@"mediaTagName"];
     [wxMediaMessage setThumbImage:[self getUIImageFromURL:[message objectForKey:@"thumb"]]];
     
     // media parameters
