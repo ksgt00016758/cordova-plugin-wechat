@@ -1,4 +1,4 @@
-package xu.li.cordova.wechat;
+package org.apache.cordova.wechat;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
