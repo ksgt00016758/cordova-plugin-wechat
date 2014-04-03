@@ -21,7 +21,7 @@ import com.tencent.mm.sdk.openapi.WXWebpageObject;
 
 public class Weixin extends CordovaPlugin {
 
-	public static final String WXAPPID_PROPERTY_KEY = "weixinappid";
+	public static final String WXAPPID_PROPERTY_KEY = "wechatappid";
 
 	public static final String ERROR_WX_NOT_INSTALLED = "未安装微信";
 	public static final String ERROR_ARGUMENTS = "参数错误";
@@ -74,7 +74,7 @@ public class Weixin extends CordovaPlugin {
 			throws JSONException {
 		final IWXAPI api = getWXAPI();
 
-		api.registerApp(webView.getProperty(WXAPPID_PROPERTY_KEY, "wx8e552eaccd33eb8e"));
+		api.registerApp(webView.getProperty(WXAPPID_PROPERTY_KEY, ""));
 
 		// check if installed
 		if (!api.isWXAppInstalled()) {
