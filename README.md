@@ -3,11 +3,6 @@ cordova-plugin-wechat
 
 A cordova plugin, a JS version of Wechat SDK
 
-Feature
-===============
-
-Share title, description, image, and link to wechat moment(朋友圈)
-
 Example
 ===============
 
@@ -28,6 +23,10 @@ Install(iOS)
 
 Usage
 ===============
+
+安装Android
+1)需要注意发布的keystore文件要跟项目上签名部署的keystore一致
+
 
 ```Javascript
 Wechat.share({
@@ -58,16 +57,3 @@ Q: "Wechat not installed", even installed
 A: Please make sure "wechatappid" is added in ```config.xml``` 
 
 
-TODO
-===============
-
-1. ~~Add android version~~
-
-2. ~~Share to wechat session(聊天) and wechat favorite(收藏)~~
-
-3. Add other media types, including music etc.
-
-LICENSE
-===============
-
-[MIT LICENSE](http://opensource.org/licenses/MIT)
